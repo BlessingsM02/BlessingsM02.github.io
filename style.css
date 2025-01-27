@@ -298,14 +298,13 @@ span {
     position: relative;
     bottom: 0;
     width: 100%;
-    padding: 40px 0;
+    padding: 12px 0;
     background-color: rgb(158, 180, 163);
 }
 
-.footer .social {
+.footer p {
     text-align: center;
     padding-bottom: 25px;
-    color: white;
 }
 
 @media (max-width: 1285px) {
