@@ -165,32 +165,68 @@ span {
     border: 2px solid var(--main-color);
 }
 
-.text-animation {
-    font-size: 34px;
-    font-weight: 600;
-    min-width: 280px;
-}
 
-.text-animation span {
-    position: relative;
+.about-containter{
+   border: solid, 1px,var(--main-color);
+   justify-content: center;
+   padding: 2rem;
+   font-size: 1.6rem;
+   border-radius: 1rem;
 }
-
-.text-animation span::before {
-    content: 'Software engineer';
-    color: var(--main-color);
-    animation: words 20s infinite;
-}
-
-.text-animation span::after {
-    content: " ";
-    background-color: var(--bg-color);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 100%;
-    border-left: 2px solid #f1f1f1;
-    right: -8px;
-    animation: cursor 0.6s infinite, typing 20s steps(14) infinite;
-}
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .skills-container ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-container li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px; 
+    height: 100px; 
+    background-color: #f0f0f0;
+    border-radius: 50%; 
+    text-align: center;
+    box-shadow: 0 4px 8px #264d96;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .skills{
+    background: #f9f9f9;
+  }
+  
+  .skills h2{ 
+    margin-bottom: 5rem;
+    color: black;
+  }
+  .skills-container p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+    color: #264d96;
+    transition: color 0.3s; 
+  }
+  
+  .skills-container li:hover{
+    background-color: #264d96;
+    box-shadow: 0 4px 8px #f0f0f0;
+    color: #f0f0f0;
+  }
+  
+  .skills-container li:hover p {
+    color: #f0f0f0;
+  }
+  
+  
 
 ::-webkit-scrollbar {
     width: 15px;
