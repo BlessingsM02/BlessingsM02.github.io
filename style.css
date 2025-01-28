@@ -299,7 +299,7 @@ span {
     bottom: 0;
     width: 100%;
     padding: 12px 0;
-    background-color: rgb(158, 180, 163);
+    background-color: var(--main-color);
 }
 
 .footer p {
@@ -379,12 +379,114 @@ span {
     .home p {
         width: 400px;
     }
-
-    .projects h2 {
-        margin-bottom: 3rem;
-    }
-
-    .projects-container {
-        grid-template-columns: repeat(1, 1fr);
-    }
 }
+
+.projects{
+  background: #f9f9f9;
+  color: black;
+}
+
+.projects h2{ 
+  margin-bottom: 5rem;
+  color: black;
+}
+
+#all-project {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;  
+}
+
+.project {
+  background-color: white;
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px #264d96;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+.project a {
+  text-decoration: none;
+  color: inherit; 
+}
+
+.repo_top {
+  padding: 20px;
+}
+
+.repo-name h3 {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: black; 
+}
+
+.repo_top p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: grey; 
+}
+
+.repo-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.repo-stats span {
+  color: rgb(102, 95, 95);
+  margin-left: 5px;
+  gap: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+
+.repo-stats-left{
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: gray;
+}
+
+.repo-stats-right span {
+  font-size: 10px;
+  color: #666; 
+}
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #264d96;
+  }
+  
+  .footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  
+  .footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+  }
+  
+  .footer ul li a:hover{
+    border-bottom: 3px solid white;
+  }
+  
+  .footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+  }
