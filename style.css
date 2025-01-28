@@ -270,18 +270,25 @@ span {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     align-items: center;
     gap: 2rem;
     justify-content: center;
+    padding: 0 5%;
 }
 
 .projects-box {
     border: 3px solid var(--main-color);
-    height: 300px;
+    height: auto; 
+    min-height: 300px;
     border-radius: 1em;
     cursor: pointer;
     transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem; 
 }
 
 .projects-box:hover {
@@ -290,25 +297,18 @@ span {
     transform: scale(1.03);
 }
 
-.projects-box .projects-info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
-}
-
 .projects-info h4 {
-    font-size: 36px;
+    font-size: 3.8rem; 
     font-weight: 500;
+    margin-bottom: 1rem;
+    text-align: center;
 }
 
 .projects-info p {
-    margin-top: 2rem;
-    font-size: 20px;
+    margin-top: 1rem;
+    font-size: 1.6rem;
     font-weight: 400;
-    margin: auto;
+    text-align: center;
 }
 
 .footer {
