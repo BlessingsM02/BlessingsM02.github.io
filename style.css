@@ -65,7 +65,6 @@ section {
   
   .home {
     text-align: center;
-<<<<<<< HEAD
     padding: 12rem 0 6rem;
   }
   
@@ -86,74 +85,6 @@ section {
   }
   
   /* Other section styles remain unchanged */
-=======
-    margin-top: 3rem;
-}
-
-.home-content h1 {
-    font-size: 6.5rem;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 12px;
-}
-
-span {
-    color: var(--main-color);
-}
-
-.logo span {
-    color: var(--main-color);
-}
-
-.home-content h3:nth-of-type(2) {
-    margin-bottom: 2rem;
-    font-size: 4.8rem;
-}
-
-.home-content p {
-    font-size: 2.0rem;
-    font-weight: 500;
-    width: 1000px;
-    color: gray;
-}
-
-.social-icons a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    font-size: 3rem;
-    height: 5rem;
-    color: var(--main-color);
-    background: transparent;
-    border-radius: 50%;
-    border: 0.3rem solid var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    transition: 0.3s ease;
-}
-
-.social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.social-icons a:hover {
-    color: white;
-    transform: scale(1.3) translateY(-5px);
-    background-color: var(--main-color);
-}
-
-
-.about-containter {
-    border: solid, 1px, var(--main-color);
-    justify-content: center;
-    padding: 2rem;
-    margin-top: 1.6rem;
-    font-size: 1.9rem;
-    border-radius: 1rem;
-}
->>>>>>> 1fcbb59bb3f1b9875eae4cd537e2ac57feffa24e
 
 .skills-container {
   display: grid;
