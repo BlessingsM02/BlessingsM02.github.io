@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B Mwandira-portifolio</title>
+    <title>B Mwandira - Portfolio</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <header class="header">
       <a href="#home" class="logo">B <span>Mwandira</span></a>
 
@@ -28,163 +30,186 @@
 
     <section class="home" id="home">
       <div class="home-content">
-        
-        <h1>Blessings Mwandira</span></h1>
-        <p>Software Engineer | Game Developer</p>
+        <h1>Blessings Mwandira</h1>
+        <h3>Software Engineer | Game Developer</h3>
       </div>
-
-      
     </section>
 
     <section class="about" id="about">
-        <h2 class="heading">About</h2>
-        <div class="about-containter">
-          <p>A passionate and motivated software engineer with 
-            a strong foundation in software development and game
-            development. Adept at solving problems through programming
-             and enthusiastic about creating innovative solutions.
-            Seeking opportunities to contribute and grow within a dynamic 
-            organization.</p>
+      <h2 class="heading">About <span>Me</span></h2>
+      <div class="about-container">
+        <div class="about-card">
+          <div class="about-content">
+            <i class="fas fa-user-graduate"></i>
+            <h3>Background</h3>
+            <p>A passionate and motivated software engineer with
+               a strong foundation in software development and game
+              development. Adept at solving problems through
+               programming and enthusiastic about creating innovative solutions.
+              Seeking opportunities to contribute and grow
+               within a dynamic organization.</p>
+          </div>
+          <div class="about-content">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Education</h3>
+            <p>BSc in Computer Science<br>University of Zambia (2020-2024)</p>
+          </div>
         </div>
-        
+      </div>
     </section>
-
 
     <section class="skill" id="skill">
-        <h2 class="heading">Skill</h2>
-        <div class="skills-container">
-          
-          <ul>
-              <li>
-                  <p>C#</p>
-              </li>
-              <li>
-                  <p>Java</p>
-              </li>
-              <li>
-                  <p>Python</p>
-              </li>
-              <li>
-                  <p>JavaScript</p>
-              </li>
-              <li>
-                <p>PHP</p>
-              </li>
-              <li>
-                  <p>HTML/CSS</p>
-              </li>
-              <li>
-                <p>SQL</p>
-              </li>
-              <li>
-                <p>Asp .Net</p>
-              </li>
-              <li>
-                <p>.Net Maui</p>
-              </li>
-              
-          </ul>
+      <h2 class="heading">Technical <span>Skills</span></h2>
+      <div class="skills-container">
+        <div class="skill-card">
+          <i class="fas fa-code"></i>
+          <h3>Languages</h3>
+          <p>C#, Java, Python, JavaScript, PHP, HTML/CSS</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-mobile-alt"></i>
+          <h3>Frameworks</h3>
+          <p>.NET MAUI, Xamarin, Asp .NET, Laravel, React </p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-database"></i>
+          <h3>Database</h3>
+          <p>SQLite, MySQL, FireBase</p>
+        </div>
+        <div class="skill-card">
+          <i class="fas fa-tools"></i>
+          <h3>Tools</h3>
+          <p>Git, Unity</p>
+        </div>
       </div>
-        
     </section>
-
 
     <section class="experience" id="experience">
-        <h2 class="heading">Experience</h2>
-        <div class="experience-container">
-          <h4><span>Software Developer Intern</span> </h4>
-          <p>BIMTECH Ventures Limited | December 2023 - Feb 2024</p>
-          <p>Collaborated with the development team to design and implement web-based solutions</p>
-          <p>Developed features using PHP - Laravel, ensuring optimal functionality and user experience</p>
+      <h2 class="heading">Professional <span>Experience</span></h2>
+      <div class="experience-container">
+        <div class="experience-card">
+          <div class="experience-header">
+            <i class="fas fa-briefcase"></i>
+            <h3>Software Developer Intern</h3>
+            <span class="date">Dec 2023 - Feb 2024</span>
+          </div>
+          <h4>BIMTECH Ventures Limited</h4>
+          <ul>
+            <li>Developed enterprise web solutions using PHP- Laravel</li>
+            <li>Debugged and resolved software issues, improving performance and reliability.</li>
+            <li>Collaborated with the development team to design and implement web-based solutions</li>
+          </ul>
         </div>
-
+      </div>
     </section>
-
 
     <section class="projects" id="projects">
-      <h2 class="heading">Projects</h2>
+      <h2 class="heading">Featured <span>Projects</span></h2>
       <div class="projects-container">
-        <a href="https://github.com/BlessingsM02/RoadSide-Rescue">
-          <div class="projects-box">
-            <div class="projects-info">
-              <h4>Roadside Rescue</h4>
-              <p>
-                A mobile application which aims at helping users/drivers having roadside emergencies (low on fuel/tire burst) to
-                 easily get help. Service provider version of the app
-              </p>
-            </div>
+        <!-- Roadside Rescue Project -->
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-car-burst"></i>
+            <h3>Roadside Rescue</h3>
           </div>
-        </a>
-
-        <a href="https://github.com/BlessingsM02/Goals">
-          <div class="projects-box">
-            <div class="projects-info">
-              <h4>Goals</h4>
-              <p>
-                "Goals" is a modern, intuitive financial management app designed to help users take control of their finances. It empowers users to monitor
-                 their spending, set goals, and make informed financial decisions.
-              </p>
-            </div>
+          <p>Emergency assistance mobile app connecting drivers with service providers</p>
+          <div class="tech-stack">
+            <span>.NET MAUI</span>
+            <span>XAML</span>
+            <span>Google Maps API</span>
+            <span>FireBase</span>
           </div>
-        </a>
+          <a href="https://github.com/BlessingsM02/RoadSide-Rescue" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-        <a href="https://chile02.itch.io/maze">
-          <div class="projects-box">
-            <div class="projects-info">
-              <h4>Maze</h4>
-              <p>
-                A mobile maze game where a player moves a ball around the 
-                maze by tilting their phone to collect coins and reach the end point. 
-              </p>
-            </div>
+        <!-- Goals Project -->
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-wallet"></i>
+            <h3>Goals Finance</h3>
           </div>
-        </a>
-
-        <a href="https://github.com/Chile02/Moviefy-Project">
-          <div class="projects-box">
-            <div class="projects-info">
-              <h4>Moviefy</h4>
-              <p>
-                A movie recommendation system build using R(Shiny). 
-                Recommends movies to users based on ratings and histry.
-              </p>
-            </div>
+          <p>Personal finance management app with budget tracking and analytics</p>
+          <div class="tech-stack">
+            <span>.NET MAUI</span>
           </div>
-        </a>
+          <a href="https://github.com/BlessingsM02/Goals" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
 
+        <!-- Maze Game -->
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-gamepad"></i>
+            <h3>Maze Game</h3>
+          </div>
+          <p>3D mobile game with accelerometer controls and dynamic level generation</p>
+          <div class="tech-stack">
+            <span>Unity Engine</span>
+            <span>C# Scripting</span>
+            <span>Blender</span>
+          </div>
+          <a href="https://chile02.itch.io/maze" class="project-link">Play Demo <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- Moviefy -->
+        <div class="project-card">
+          <div class="project-header">
+            <i class="fas fa-film"></i>
+            <h3>Moviefy</h3>
+          </div>
+          <p>Movie recommendation system with personalized suggestions</p>
+          <div class="tech-stack">
+            <span>R</span>
+            <span>Shiny</span>
+          </div>
+          <a href="https://github.com/Chile02/Moviefy-Project" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add this to your contact section -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+  <div class="contact-container">
+    <div class="contact-info">
       
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>blessingsmwandira4@gmail.com</p>
+        </div>
       </div>
-    </section>
-
-
-
-    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me</span></h2>
-
-      <div class="social-icons">
-        <a href="https://linkedin.com/in/blessings-mwandira-31410b26a"
-          ><i class="bx bxl-linkedin-square"></i
-        ></a>
-        <a href="https://x.com/ChileMwandira?t=jn_tqEln5oNOHAW4w9NP7Q&s=35"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a href="https://github.com/BlessingsM02"><i class="bx bxl-github"></i></a>
-        <a href="mailto:blessingsmwandira4@gmail.com" class="bx bxl-gmail"></a>
-        <a href="tel:+260961146553" class="bx bx-phone"></a>
-        <a href="http://t.me/Chile02" class="bx bxl-telegram"></a>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Call Me</h4>
+          <p>+260 961 146553</p>
+        </div>
       </div>
-    </section>
+    </div>
+    
+    <div class="social-links">
+      <a href="https://linkedin.com/in/blessings-mwandira-31410b26a" target="_blank">
+        <i class="bx bxl-linkedin"></i>
+      </a>
+      <a href="https://github.com/BlessingsM02" target="_blank">
+        <i class="bx bxl-github"></i>
+      </a>
+      <a href="http://t.me/Chile02" target="_blank">
+        <i class="bx bxl-telegram"></i>
+      </a>
+      <a href="https://x.com/ChileMwandira" target="_blank">
+        <i class="bx bxl-twitter"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
 
     <footer class="footer">
-      <ul>
-          <li>
-              <a href="#home">Blessings Mwandira</a>
-          </li>
-          <li>
-              <a href="tel:+260961146553">+260961146553</a>
-          </li>
-      </ul>
-  </footer>
-    <script src="index.js"></script>
+      <p>&copy; 2025 Blessings Mwandira. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
