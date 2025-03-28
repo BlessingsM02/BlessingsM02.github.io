@@ -58,20 +58,38 @@ body {
 #menu-icon {
     font-size: 3.6rem;
     color: var(--dark-color);
-    cursor: pointer;
     display: none;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 .navbar {
     display: flex;
-    gap: 2rem;
+    gap: 3.5rem;
 }
 
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     color: var(--dark-color);
-    text-decoration: none;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.6rem;
+    width: 0;
+    height: 0.2rem;
+    background: var(--primary-color);
+    transition: 0.3s ease;
+}
+
+.navbar a:hover::after,
+.navbar a.active::after {
+    width: 100%;
 }
 
 .navbar a:hover,
@@ -396,11 +414,13 @@ section {
         top: 100%;
         left: -100%;
         width: 100%;
-        padding: 1rem 4%;
-        background: white;
-        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-        transition: 0.3s;
+        padding: 2rem 9%;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         flex-direction: column;
+        align-items: center;
+        transition: 0.3s ease;
+        gap: 2rem;
     }
 
     .navbar.active {
@@ -408,9 +428,24 @@ section {
     }
 
     .navbar a {
+        font-size: 1.8rem;
         display: block;
-        margin: 1.5rem 0;
-        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    .navbar a::after {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 0.2rem;
+    }
+
+    .navbar a:hover::after,
+    .navbar a.active::after {
+        width: 50%;
     }
 
     .home-content h1 {
