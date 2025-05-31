@@ -1,252 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>B Mwandira - Portfolio</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
 
-    <header class="header">
-      <a href="#home" class="logo">B <span>Mwandira</span></a>
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skill">Skill</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B Mwandira</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
 
-    <section class="home" id="home">
-      <div class="home-content">
+<body>
+  <header class="header">
+    <a href="#home" class="logo"><i class='bx bx-code-alt'></i> B <span>Mwandira</span></a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skill">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="home" id="home">
+    <div class="container">
+      <div class="home-content fade-in">
         <h1>Blessings Mwandira</h1>
         <h3>Software Engineer | Game Developer</h3>
+        <p>Passionate developer creating innovative solutions and engaging experiences through code and creativity.</p>
+        <div class="home-btns">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="about" id="about">
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
       <h2 class="heading">About <span>Me</span></h2>
       <div class="about-container">
-        <div class="about-card">
-          <div class="about-content">
-            <i class="fas fa-user-graduate"></i>
-            <h3>Background</h3>
-            <p>A passionate and motivated software engineer with
-               a strong foundation in software development and game
-              development. Adept at solving problems through
-               programming and enthusiastic about creating innovative solutions.
-              Seeking opportunities to contribute and grow
-               within a dynamic organization.</p>
-          </div>
-          <div class="about-content">
+        <div class="about-img slide-in-left"></div>
+        <div class="about-content slide-in-right">
+          <h3>My Journey</h3>
+          <p>A passionate and motivated software engineer with a strong foundation in software development and game
+            development. Adept at solving problems through programming and enthusiastic about creating innovative
+            solutions. Seeking opportunities to contribute and grow within a dynamic organization.</p>
+          <p>With expertise in both application development and game design, I bridge the gap between functionality and
+            user experience. My academic background and professional experience have equipped me with a diverse skill
+            set that allows me to tackle complex challenges.</p>
+
+          <div class="education">
             <i class="fas fa-graduation-cap"></i>
-            <h3>Education</h3>
+            <h4>Education</h4>
             <p>BSc in Computer Science<br>University of Zambia (2021-2024)</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="skill" id="skill">
+  <!-- Skills Section -->
+  <section class="skill" id="skill">
+    <div class="container">
       <h2 class="heading">Technical <span>Skills</span></h2>
       <div class="skills-container">
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <i class="fas fa-code"></i>
           <h3>Languages</h3>
-          <p>C#, Java, C/Side, AL, Python, JavaScript, TypeScript, PHP, HTML/CSS</p>
+          <p>C#, Java, C++, C/Side - AL, JavaScript, TypeScript, PHP, HTML/CSS</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <i class="fas fa-mobile-alt"></i>
           <h3>Frameworks</h3>
           <p>.NET MAUI, Xamarin, Asp .NET, Laravel, React </p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <i class="fas fa-database"></i>
           <h3>Database</h3>
           <p>Microsoft SQL, MySQL, FireBase</p>
         </div>
-        <div class="skill-card">
+        <div class="skill-card fade-in">
           <i class="fas fa-tools"></i>
           <h3>Tools</h3>
-          <p>Git, Unity, Blender</p>
+          <p>Git, Unity, Godot, Blender</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="experience" id="experience">
+  <!-- Experience Section -->
+  <section class="experience" id="experience">
+    <div class="container">
       <h2 class="heading">Professional <span>Experience</span></h2>
-
       <div class="experience-container">
-        <div class="experience-card">
+        <div class="experience-card fade-in">
           <div class="experience-header">
             <i class="fas fa-briefcase"></i>
-            <h3>Systems Developer </h3>
-            <span class="date">Feb 2025 - Current</span>
+            <div class="experience-header-content">
+              <h3>Systems Developer</h3>
+              <span class="date">Feb 2025 - Current</span>
+            </div>
           </div>
           <h4>SACIP Support Services Limited</h4>
           <ul>
-            <li>Collaborated with the development team to build and customize ERP 
-              solutions using Microsoft Dynamics 
+            <li>Collaborated with the development team to build and customize ERP solutions using Microsoft Dynamics
               NAV/Business Central.</li>
-            <li>Developed and maintained functionality using C/Side and AL,
-               ensuring system reliability and business 
+            <li>Developed and maintained functionality using C/Side and AL, ensuring system reliability and business
               process alignment</li>
+            <li>Implemented custom modules to enhance financial reporting capabilities</li>
+
           </ul>
         </div>
-      </div>
 
-      <div class="experience-container">
-        <div class="experience-card">
+        <div class="experience-card fade-in">
           <div class="experience-header">
             <i class="fas fa-briefcase"></i>
-            <h3>Software Developer Intern</h3>
-            <span class="date">Dec 2023 - Feb 2024</span>
+            <div class="experience-header-content">
+              <h3>Software Developer Intern</h3>
+              <span class="date">Dec 2023 - Feb 2024</span>
+            </div>
           </div>
           <h4>BIMTECH Ventures Limited</h4>
           <ul>
-            <li>Developed enterprise web solutions using PHP- Laravel</li>
-            <li>Debugged and resolved software issues, improving performance and reliability.</li>
+            <li>Developed enterprise web solutions using PHP-Laravel framework</li>
+            <li>Debugged and resolved software issues, improving performance and reliability</li>
             <li>Collaborated with the development team to design and implement web-based solutions</li>
+            <li>Participated in agile development processes and code reviews</li>
           </ul>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="projects" id="projects">
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="container">
       <h2 class="heading">Featured <span>Projects</span></h2>
       <div class="projects-container">
         <!-- Roadside Rescue Project -->
-        <div class="project-card">
-          <div class="project-header">
+        <div class="project-card fade-in">
+          <div class="project-img">
             <i class='bx bxs-car-mechanic'></i>
-            <h3>Roadside Rescue</h3>
           </div>
-          <p>Emergency assistance mobile app connecting drivers with service providers</p>
-          <div class="tech-stack">
-            <span>.NET MAUI</span>
-            <span>XAML</span>
-            <span>Google Maps API</span>
-            <span>FireBase</span>
+          <div class="project-content">
+            <div class="project-header">
+              <i class='bx bxs-car-mechanic'></i>
+              <h3>Roadside Rescue</h3>
+            </div>
+            <p>Emergency assistance mobile app connecting drivers with service providers for quick vehicle assistance.
+            </p>
+            <div class="tech-stack">
+              <span>.NET MAUI</span>
+              <span>XAML</span>
+              <span>Google Maps API</span>
+              <span>FireBase</span>
+            </div>
+            <a href="https://github.com/BlessingsM02/RoadSide-Rescue" class="project-link">View Project <i
+                class="fas fa-arrow-right"></i></a>
           </div>
-          <a href="https://github.com/BlessingsM02/RoadSide-Rescue" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
         </div>
 
         <!-- Goals Project -->
-        <div class="project-card">
-          <div class="project-header">
+        <div class="project-card fade-in">
+          <div class="project-img">
             <i class="fas fa-wallet"></i>
-            <h3>Goals Finance</h3>
           </div>
-          <p>Personal finance management app with budget tracking and analytics</p>
-          <div class="tech-stack">
-            <span>.NET MAUI</span>
-            <span>XAML</span>
+          <div class="project-content">
+            <div class="project-header">
+              <i class="fas fa-wallet"></i>
+              <h3>Goals Finance</h3>
+            </div>
+            <p>Personal finance management app with budget tracking, expense analytics, and financial goal setting.(Mobile App)</p>
+            <div class="tech-stack">
+              <span>.NET MAUI</span>
+              <span>XAML</span>
+            </div>
+            <a href="https://github.com/BlessingsM02/Goals" class="project-link">View Project <i
+                class="fas fa-arrow-right"></i></a>
           </div>
-          <a href="https://github.com/BlessingsM02/Goals" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <!-- wallet -->
+        <div class="project-card fade-in">
+          <div class="project-img">
+            <i class="fas fa-wallet"></i>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <i class="fas fa-wallet"></i>
+              <h3>Wallet</h3>
+            </div>
+            <p>A secure and user-friendly finance application for wallet management and transaction tracking.(WebApp)</p>
+            <div class="tech-stack">
+              <span>.NET MAUI</span>
+              <span>React</span>
+              <span>Microsoft SQL</span>
+            </div>
+            <a href="https://github.com/BlessingsM02/WalletAssessment" class="project-link">View Project <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
         </div>
 
         <!-- Maze Game -->
-        <div class="project-card">
-          <div class="project-header">
+        <div class="project-card fade-in">
+          <div class="project-img">
             <i class="fas fa-gamepad"></i>
-            <h3>Maze Game</h3>
           </div>
-          <p>3D mobile game with accelerometer controls and dynamic level generation</p>
-          <div class="tech-stack">
-            <span>Unity Engine</span>
-            <span>C# Scripting</span>
-            <span>Blender</span>
+          <div class="project-content">
+            <div class="project-header">
+              <i class="fas fa-gamepad"></i>
+              <h3>Maze Game</h3>
+            </div>
+            <p>3D mobile game with accelerometer controls, dynamic level generation, and immersive environments.</p>
+            <div class="tech-stack">
+              <span>Unity Engine</span>
+              <span>C# Scripting</span>
+              <span>Blender</span>
+            </div>
+            <a href="https://chile02.itch.io/maze" class="project-link">Play Demo <i class="fas fa-arrow-right"></i></a>
           </div>
-          <a href="https://chile02.itch.io/maze" class="project-link">Play Demo <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-        <!-- Library management -->
-        <div class="project-card">
-          <div class="project-header">
-            <i class='bx bx-book'></i>
-            <h3>Lib Management</h3>
-          </div>
-          <p>Library management system that does all the neccesary tasks. User login, 
-            browser books, make reservations and  receive notifications
-          </p>
-          <div class="tech-stack">
-            <span>C#</span>
-            <span>ASP .Net Core</span>
-          </div>
-          <a href="https://github.com/Chile02/LibManagement" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-
-
-        <!-- E-commerce -->
-        <div class="project-card">
-          <div class="project-header">
-            <i class='bx bx-shopping-bag'></i>
-            <h3>Wallet</h3>
-          </div>
-          <p>A secure and user-friendly finance application for wallet management and transaction tracking.</p>
-          <div class="tech-stack">
-            <span>React-TS</span>
-            <span>Asp .Net Web API</span>
-            <span>Microsoft SQL</span>
-          </div>
-          <a href="https://github.com/BlessingsM02/WalletAssessment.git" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Add this to your contact section -->
-<section class="contact" id="contact">
-  <h2 class="heading">Contact <span>Me</span></h2>
-  <div class="contact-container">
-    <div class="contact-info">
-      
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i>
-        <div>
-          <h4>Email</h4>
-          <p>blessingsmwandira4@gmail.com</p>
-        </div>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <div>
-          <h4>Call Me</h4>
-          <p>+260 961 146553</p>
         </div>
       </div>
     </div>
-    
-    <div class="social-links">
-      <a href="https://linkedin.com/in/blessings-mwandira-31410b26a" target="_blank">
-        <i class="bx bxl-linkedin"></i>
-      </a>
-      <a href="https://github.com/BlessingsM02" target="_blank">
-        <i class="bx bxl-github"></i>
-      </a>
-      <a href="http://t.me/Chile02" target="_blank">
-        <i class="bx bxl-telegram"></i>
-      </a>
-      <a href="https://x.com/ChileMwandira" target="_blank">
-        <i class="bx bxl-twitter"></i>
-      </a>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2 class="heading">Contact <span>Me</span></h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <p>blessingsmwandira4@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Location</h4>
+              <p>Lusaka, Zambia</p>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://linkedin.com/in/blessings-mwandira-31410b26a" target="_blank">
+              <i class="bx bxl-linkedin"></i>
+            </a>
+            <a href="https://github.com/BlessingsM02" target="_blank">
+              <i class="bx bxl-github"></i>
+            </a>
+            <a href="http://t.me/Chile02" target="_blank">
+              <i class="bx bxl-telegram"></i>
+            </a>
+            <a href="https://x.com/ChileMwandira" target="_blank">
+              <i class="bx bxl-twitter"></i>
+            </a>
+            <a href="mailto:blessingsmwandira4@gmail.com">
+              <i class='bx  bx-envelope'></i>
+            </a>
+            <a href="tel:+260961146553">
+              <i class="bx bx-phone"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Blessings Mwandira. All rights reserved.</p>
+  </footer>
 
-    <footer class="footer">
-      <p>&copy; 2025 Blessings Mwandira. All rights reserved.</p>
-    </footer>
+  <script src="index.js"></script>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
