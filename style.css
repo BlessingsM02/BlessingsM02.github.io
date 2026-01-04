@@ -527,6 +527,12 @@ section {
   background-color: white;
 }
 
+.view-all-projects {
+  display: block;
+  text-align: center;
+  margin-top: 2rem;
+}
+
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -786,6 +792,49 @@ section {
 
   .contact-container {
     padding: 3rem;
+  }
+
+  /* Small-screen project and experience adjustments */
+  .projects-container .project-card:nth-child(n+5) {
+    display: none;
+  }
+
+  .view-all-projects {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .view-all-projects a {
+    display: inline-block;
+    padding: 1.2rem 2.4rem;
+    background: var(--primary);
+    color: white;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .view-all-projects a:hover {
+    background: var(--accent);
+  }
+
+  /* Experience timeline stack on small screens */
+  .experience-timeline::before {
+    left: 8px;
+  }
+
+  .experience-item:nth-child(odd) .experience-card,
+  .experience-item:nth-child(even) .experience-card {
+    width: 100%;
+    margin: 0 0 3rem 0;
+  }
+
+  .timeline-marker {
+    left: 20px;
+    transform: translateX(0);
   }
 }
 
